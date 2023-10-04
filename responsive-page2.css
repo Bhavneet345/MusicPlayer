@@ -1,0 +1,217 @@
+@media screen and (max-width:600px){
+    /* Navigation Bar */
+        nav .name_icon{width:60px;}
+        nav .favourites{width:220px;}
+        nav .favourites span{visibility:hidden;}
+        .searchbox input{display:none;}
+    /* Main block */
+    main{margin-left:0px;width:55%;}
+        /* Cold play band div */
+           .trending_cover_songs{height:300px;top:10px;}
+           .trending_cover_songs img{display:none;}
+        /* description paragraph heading and followers of coldplay */
+           .trending_cover_songs .description{height:300px;width:100%;;}
+           .description h1{margin-top:5px;margin-left:20px;}
+           .description #followers{font-size:15px;left:23%;}
+           .description p{font-size:13px;margin-right:0px;line-height:17px;}
+        /* play all button, albums tracks and follow link */
+           .description button{padding:2px 2px;width:100px;}
+           .description a{color:grey;margin-left:60px;}
+           #albums{font-size:15px;}
+        /* Major playlist songs just below coldplay div */
+           .playlist{grid-template-rows:repeat(6,60px);}
+           .playlist_item img{height:60px;width:20%;margin-left:0px;}
+           .playlist_item span{display:none;}
+           .playlist_item p span:first-child{display:inline-block;left:25%;font-size:16px;}
+           .playlist_item p span:last-child{display:inline-block;left:25%;font-size:13px;}
+           #heart{left:75%;top:30%;}
+           #add{left:90%;top:30%;}
+    /* Aside Block */
+    aside{width:37%;vertical-align: top;margin-top:100px;margin-left:8px;margin-right:-10px;}
+        /* Similar Artists Section */
+           .artists_content{grid-template-rows: repeat(3,60px);}
+           .heading p{margin:10px;margin-left:5px;color:white;font-weight:bold;font-size:25px;display:inline-block;}
+           .heading span{display:none;}
+           .artist img{height:60px;width:30%;}
+           .artist p span:first-child{left:33%;font-size:16px;}
+           .artist p span:last-child{left:33%;top:51%;font-size:13px;}
+           .artist i{left:87%;top:12%;}
+           #duration{display:none;}
+        /* Recently Played Section */
+           .recently_played {margin-top:25px;}
+           .played_content{grid-template-rows: repeat(3,60px);}
+           .song img{height:60px;width:28%;margin-left:0px;}
+           .song span{display:none;}
+           .song p span:first-child{display:inline-block;left:33%;font-size:16px;}
+           .song p span:last-child{display:inline-block;left:33%;font-size:13px;}
+           .song i{left:85%;top:20%;}
+    
+     /* Bottom fixed current playing songbox */
+        
+        /* part containing current song photo and description */
+           .music .photo {width:35%;margin-left: 10px;}
+           .music .photo img{width:50%;}
+           .music .photo p span:first-child{left:55%;}
+           .music .photo p span:last-child{display:none;}
+           .music .photo #first{left: 83%;}
+           .music .photo #second{left:99%;}
+
+      /* part containing controls selection and slider */
+           .gaana{width:45%;left:10%;}
+           #u{left:25%;}
+           #v{left:35%;}
+           #w{left:45%;}
+           #x{left:63%;}
+           #y{left:74%;}
+     
+      /* rightmost part containing volume control as well as display icons */
+           .last{display:none;}
+    }
+
+ @media screen and (min-width:600px) and (max-width:850px){
+    /* Navigation Bar */
+        nav .name_icon{width:60px;}
+        nav .favourites{width:450px;}
+        nav .favourites span{margin-left:100px;}
+        .searchbox input{display:none}
+        .searchbox{width:150px;right:0px;left:-5px;}
+    /* Main Block */
+    main{margin-left:0px;width:60%;}
+        /* Cold play band div */
+           .trending_cover_songs{height:280px;top:10px;}
+           .trending_cover_songs img{display:none;}
+        /* description paragraph heading and followers of coldplay */
+           .trending_cover_songs .description{height:300px;width:100%;;}
+           .description h1{margin-top:5px;margin-left:20px;}
+           .description #followers{font-size:15px;left:23%;}
+           .description p{font-size:13px;margin-right:0px;line-height:17px;}
+        /* play all button, albums tracks and follow link */
+           .description button{padding:2px 2px;width:100px;}
+           .description a{color:grey;margin-left:60px;}
+           #albums{font-size:15px;}
+    /* Major playlist songs just below coldplay div */
+           .playlist{grid-template-rows:repeat(6,60px);}
+           .playlist_item img{height:60px;width:20%;margin-left:0px;}
+           .playlist_item span{display:none;}
+           .playlist_item p span:first-child{display:inline-block;left:25%;font-size:16px;}
+           .playlist_item p span:last-child{display:inline-block;left:25%;font-size:13px;}
+           #heart{left:75%;top:30%;}
+           #add{left:90%;top:30%;}
+    /* Aside block */
+    aside{width:37%;vertical-align: top;margin-top:100px;margin-left:8px;margin-right:-10px;}
+        /* Similar Artists Section */
+           .artists_content{grid-template-rows: repeat(3,60px);}
+           .heading p{margin:10px;margin-left:5px;color:white;font-weight:bold;font-size:25px;display:inline-block;}
+           .heading span{display:none;}
+           .artist img{height:60px;width:30%;}
+           .artist p span:first-child{left:33%;font-size:16px;}
+           .artist p span:last-child{left:33%;top:51%;font-size:13px;}
+           .artist i{left:87%;top:12%;}
+           #duration{display:none;}
+        /* Recently Played Section */
+           .recently_played {margin-top:25px;}
+           .played_content{grid-template-rows: repeat(3,60px);}
+           .song img{height:60px;width:28%;margin-left:0px;}
+           .song span{display:none;}
+           .song p span:first-child{display:inline-block;left:33%;font-size:16px;}
+           .song p span:last-child{display:inline-block;left:33%;font-size:13px;}
+           .song i{left:85%;top:20%;}
+    /* bottom music box */
+           .music .photo {width:25%;margin-left:10px;}
+           .music .photo img{width:50%;}
+           .music .photo p span:first-child{left:55%;}
+           .music .photo p span:last-child{display:none;}
+           .music .photo #first{left: 83%;}
+           .music .photo #second{left:99%;}
+
+        /* part containing controls selection and slider */
+           .gaana{width:40%;left:10%;}
+           #u{left:25%;}
+           #v{left:35%;}
+           #w{left:45%;}
+           #x{left:63%;}
+           #y{left:74%;}
+
+        /* last part */
+           #p{left:10%;}
+           #q{left:20%;}
+           #r{left:30%;}
+           #s{left:45px;top:-5px;}
+           .volume{left:40%}
+    }
+
+@media screen and (min-width:850px) and (max-width:1100px){
+    /* Navigation Bar */
+        .favourites{width:330px;}
+        .favourites span{margin-left:100px;}
+        .searchbox input{display:inline-block;}
+        .searchbox{width:500px;right:0px;left:5px;}
+    /* Main block */
+    main{margin-left:10px;width:60%;}
+       /* Cold play band div */
+          .trending_cover_songs{height:270px;top:10px;}
+          .trending_cover_songs img{height:270px;}
+       /* description paragraph heading and followers of coldplay */
+          .trending_cover_songs .description{height:300px;width:100%;;}
+          .description h1{margin-top:5px;margin-left:20px;}
+          .description #followers{font-size:15px;left:23%;}
+          .description p{font-size:13px;margin-right:0px;line-height:17px;}
+       /* play all button, albums tracks and follow link */
+          .description button{padding:2px 2px;width:100px;margin-top:15px;}
+          .description a{margin-left:60px;}
+          #albums{font-size:15px;}
+       /* Major playlist songs just below coldplay div */
+          .playlist_item img{width:15%;}
+          .playlist_item p span:first-child{left:25%;}
+          .playlist_item p span:last-child{left:25%;}
+           #heart{left:80%;top:30%;}
+           #add{left:90%;top:30%;}
+    /* Aside block */
+    aside{width:37%;vertical-align: top;margin-top:100px;margin-left:10px;margin-right:-10px;}
+          .heading span{display:none;}
+    /* bottom music box */
+          .music .photo {width:25%;margin-left:20px;}
+          .music .photo img{width:35%;}
+          .music .photo p span:first-child{left:40%;}
+          .music .photo p span:last-child{left:40%;}
+          .music .photo #first{left: 80%;}
+          .music .photo #second{left:95%;}
+      /* part containing controls selection and slider */
+          .gaana{width:40%;left:10%;}
+          #u{left:25%;}
+          #v{left:35%;}
+          #w{left:45%;}
+          #x{left:60%;}
+          #y{left:70%;}
+      /* last part */
+          #p{left:10%;}
+          #q{left:19%;}
+          #r{left:27%;}
+          #s{left:52px;top:-5px;}
+          .volume{left:33%}
+    
+    }
+
+@media screen and (min-width:1100px) and (max-width:1400px){
+     /* Navigation Bar */
+        .favourites{width:700px;}
+        .searchbox{left:-5px;}
+     /* Main Block */
+     main{margin-left:10px;width:65%;}
+        .description #followers{left:45%;}
+      /* Aside block */
+    aside{width:30%;vertical-align: top;margin-top:100px;margin-left:10px;margin-right:10px;}
+        .heading span{display:none;}
+    /* bottom music box */
+        .music .photo {width:30%;margin-left:20px;}
+    /* part containing controls selection and slider */
+        #v{left:33%;}
+        #x{left:52%;}
+        #y{left:60%;}
+     /* last part */
+        #p{left:10%;}
+        #q{left:17%;}
+        #r{left:25%;}
+        #s{left:67px;top:-5px;}
+        .volume{left:30%}
+    }

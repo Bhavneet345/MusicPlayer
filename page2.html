@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <script src="https://kit.fontawesome.com/3219be7a00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="responsive-page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    </head>
+    <body>
+        <!-- Navigation Bar
+        Its position is fixed.Here clicking on music ninja studio icon will take you back to the home page whereas clicking on name of site will display welcome box-->
+        <header id="navbar">
+
+            <nav class="header-navbar">
+
+                <div class="nav-image">
+                    <img src="images/player-icon.jpeg" alt="player-icon">
+                </div>
+    
+                <div class="nav-music-player-name">
+                    <div class="nav-name-ninja">
+                        <p>Ninja</p>
+                    </div>
+                    <div class="nav-name-studio">
+                        <p>Studio</p>
+                    </div>
+                </div>
+
+                <div class="favourites">
+                    <a href="#">Favourites</a>
+                </div>
+
+                <div class="nav-search-bar">
+                    <div class="nav-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <form>
+                        <input type="search" placeholder="Search">
+                    </form>
+                    <div class="nav-microphone-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+
+                <div class="nav-bell-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="nav-profile-image">
+                    <img src="images/profile-image.jpeg" alt="profile-image">
+                </div>
+
+            </nav>
+
+        </header>
+        <!-- Main block -->
+
+        <main>
+            <!-- This div contains Coldplay band description.Here  clicking on play all button will give a focusing effect -->
+            <div class="trending_cover_songs">
+                <img src="images/cold band.jpg">
+                <div class="description">
+                <h1>Coldplay</h1>
+                <span>British Band</span>
+                <span id="followers">851 Followers</span>
+                <p>Coldplay is a british music band that has enjoyed continuous success since their inception in 1996 through their intelligent and soulful songs.The band members are Chris Martin(lead vocals),Jonny Buckland(lead guitar),Guy Berryman(bass guitar) and Will Champion (drums).</p>
+                <button type="button">Play All</button>
+                <a href="#">Follow</a><br>
+                <span id="albums">247 Tracks|128 Albums</span>
+            </div>
+        </div><br><br>
+
+            <!-- This div contains songs section present below coldplay div. Hovering on each will give translation to them as well as animation effect -->
+            <div class="playlist">
+                    <div class="playlist_item"><span>01</span><img src="images/Chan Vekhya.jpg"><p><span>Chan Vekhya</span><br><span>Harnoor</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+                    <div class="playlist_item"><span>02</span><img src="images/Hello.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+                    <div class="playlist_item"><span>03</span><img src="images/moonlight.jpg"><p><span>Moonlight</span><br><span>Harnoor</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+                    <div class="playlist_item"><span>04</span><img src="images/teri.jpg"><p><span>Teri Ah</span><br><span>AP Dhillon</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+                    <div class="playlist_item"><span>05</span><img src="images/parshawan.jpg"><p><span>Parshawan</span><br><span>Harnoor</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+                    <div class="playlist_item"><span>06</span><img src="images/gutt.jpg"><p><span>Gutt</span><br><span>Arjan Dhillon</span></p><i id="heart" class="far fa-heart"></i><i id="add" class="fas fa-plus"></i></div>
+            </div>
+            <br><br><br><br><br><!--These br tags are added as bottom song box was overlapping the playlist songs-->
+        </main>
+
+<!-- Aside block -->
+            <aside>
+                <!-- The following div contains similar artists section. Hovering on it will show animation as well as motion movement. Clicking them will give focusing effect. -->
+                <div class="similar_artists">
+                <div class="heading">
+                <p>Similar&nbsp;Artists</p>
+                <span>View All</span></div><br>
+                <div class="artists_content">
+                    <div class="artist"><img src="images/gun.jpg"><p><span>German Gun</span><br><span id="a">Amrit Maan</span></p><i class="fas fa-ellipsis-h"></i><span id="duration">4:44</span></div>
+                    <div class="artist"><img src="images/vac.jpg"><p><span>Vacation</span><br><span id="a">Nirvair Pannu</span></p><i class="fas fa-ellipsis-h"></i><span id="duration">4:44</span></div>
+                    <div class="artist"><img src="images/daru.jpg"><p><span>Daru Sasti</span><br><span id="a">Arjan Dhillon</span></p><i class="fas fa-ellipsis-h"></i><span id="duration">4:44</span></div>
+                </div>
+
+                <!-- The following div contains recently played section.Hovering on them will give animation effect,motion movements and shadow effects. -->
+                <div class="recently_played">
+                    <div class="heading">
+                        <p>Recently&nbsp;Played</p>
+                        <span>View All</span></div>
+                    <div class="played_content">
+                        <div class="song"><span>01</span><img src="images/excuses.jpg"><p><span>Excuses</span><br><span>Karan Aujla</span></p><i class="far fa-heart"></i></div>
+                        <div class="song"><span>02</span><img src="images/gutt.jpg"><p><span>Gutt</span><br><span>Arjan Dhillon</span></p><i class="far fa-heart"></i></div>
+                        <div class="song"><span>03</span><img src="images/insane.jpg"><p><span>Chan Vekhya</span><br><span>AP Dhillon</span></p><i class="far fa-heart"></i></div>
+
+                    </div>
+                    </div>
+                </div>
+
+            
+            </aside>
+
+            <!-- Bottom Music box. Here i used a different concept. In the home page slider was dynamic but here it is stationary just as same as shown in template -->
+            <div class="music">
+                <!-- First part containing song description -->
+                <div class="photo"><img src="images/parshawan.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p>
+                    <i id="first" class="far fa-heart"></i><i id="second" class="fas fa-ban"></i></div>
+                <div class="gaana">
+                <!-- Second part containing slider as well as all controls -->
+                    <div class="btn">
+                        <i id="u"class="fas fa-cut"></i>
+                        <i id="v"class="fas fa-backward"></i>
+                        <i id="w" class="fas fa-pause"></i>
+                        <i id="x" class="fas fa-forward"></i>
+                        <i id="y" class="fas fa-sync-alt"></i>
+                    </div>
+                    <span>3:39</span>
+                    <div class="playing">
+                        <div class="timeline"><i class="fas fa-circle"></i></div>
+                    </div>
+                    <span>4:44</span>
+                <!-- Last part containing volume control and display icons -->
+                    <div class="last">
+                        <i id="p" class="fas fa-bars"></i>
+                        <i id="q" class="fas fa-desktop"></i>
+                        <i id="r" class="fas fa-volume-up"></i>
+                        <div class="volume">
+                            <div class="up"><i class="fas fa-circle"></i></div>
+                        <i id="s" class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </body>
+    </html>

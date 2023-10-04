@@ -1,0 +1,980 @@
+body{
+    margin: 0px;
+    background-color: #020e20;
+}
+
+/* header-navbar */
+.header-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    margin-left: -40px;
+}
+
+.nav-image{
+    max-height: 70px;
+    max-width: 70px;
+    background-size: contain;
+}
+
+.nav-image img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.nav-music-player-name{
+    color: white;
+    margin-left: -80px;
+    margin-top: -10px;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-name-ninja{
+    font-weight: lighter;
+    color:  lightsteelblue;
+}
+
+.nav-name-studio{
+    font-weight: bolder;
+    margin-top: -20px;
+}
+
+.favourites{
+    margin-left: -10px;
+    padding: 3px;
+}
+
+.favourites a{
+    position: relative;
+    top: 10%;
+    font-size: 1.2rem;
+    color: lightsteelblue;
+    text-decoration: none;
+}
+
+.favourites a:hover{
+    text-decoration: underline;
+    color: lightslategrey;
+}
+
+.nav-search-bar{
+    max-height: 20px;
+    min-width: 300px;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #162e53;
+    border-radius: 5%;
+    margin-left: 400px;
+}
+
+.nav-search-icon{
+    color: lightgrey;
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: smaller;
+}
+
+.nav-search-bar input{
+    border: 2px solid transparent;
+    background-color: transparent;
+    width: 150%;
+    margin-left: 5px;
+    padding: 5px;
+    height: 40%;
+}
+
+.nav-search-bar input:focus{
+    outline: none;
+}
+
+.nav-microphone-icon{
+    color: lightgray;
+    margin-left: 100px;
+    font-size: smaller;
+}
+
+.nav-bell-icon{
+    width: 30px;
+    max-height: 30px;
+    padding: 5px;
+    color: white;
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.nav-bell-icon::after{
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    margin-left: -10px;
+}
+
+.nav-profile-image{
+    max-height: 60px;
+    max-width: 60px;
+    background-size: contain;    
+}
+
+.nav-profile-image img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin-right: -10px;
+}
+
+/* common styles for section */
+section{
+    width: 71vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    justify-content: space-between;
+}
+
+/* album carousel */
+.album-container{
+    display: flex;
+}
+
+.album-container div{
+    position: absolute;
+    max-height: 500px;
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    transition: all 1s;
+    top: 15%;
+}
+
+
+.album-container div img{
+    height: 100%;
+    width: 100%;
+}
+
+.album-container div:hover{
+    z-index: 1;
+    width: 350px;
+    border: 2px solid burlywood;
+}
+
+.album-container-1{
+    left: 5%;
+}
+
+.album-container-2{
+    left: 20%;
+}
+
+.album-container-3{
+    left: 30%;
+}
+
+.album-container-4{
+    left: 40%;
+}
+
+.album-container-5{
+    left: 50%;
+}
+
+/* latest release */
+#latest-release{
+    height: 450px;
+} 
+
+.latest-release-heading{
+    color: white;
+    position: relative;
+    left: 6.5%;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.song-display{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 65%;
+    height: 50%;
+    left: 4.5%;
+    padding: 5px;
+}
+
+.song-content{
+    display: flex;
+    height: 35%;
+    width: 45%;
+    margin-right: 40px;
+}
+
+.album-image{
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid white; */
+}
+
+.album-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.album-image a{
+    position: relative;
+    color: transparent;
+    left: 43%;
+    top: -70%;
+    font-size: 1.5rem;
+}
+
+.album-image:hover .album-play-icon{
+    color: white;
+}
+
+.album-cover{
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 70%;
+}
+
+.album-name{
+    position: relative;
+    color: white;
+    left: 55%;
+    top: -80%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.release-date{
+    position: relative;
+    color: gray;
+    left: 55%;
+    top: -90%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.album-drop-down{
+    /* border: 2px solid orange; */
+    width: 10%;
+    height: 20%;
+    position: relative;
+    left: 25%;
+    top: -5%;
+}
+
+.dropbtn{
+    background-color: transparent;
+    color: gray;
+    font-size: 1.2rem;
+    border: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 10px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid gray;
+    font-weight: lighter;
+    font-size: 0.8rem;
+  }
+
+.dropdown-content a i{
+      color: rgb(142, 133, 142);
+  }
+  
+.dropdown-content a:hover{
+    background-color: #f1f1f1
+}
+  
+.album-drop-down:hover .dropdown-content {
+    display: block;
+}
+  
+.album-drop-down:hover .dropbtn {
+    background-color: transparent;
+}
+
+.album-song-duration{
+    position: relative;
+    left: 10%;
+    color: gray;
+}
+
+/* popular artists */
+#popular-artists{
+    margin-top: -7%;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+    left: 2%;
+}
+
+.popular-artists-heading{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    left: 3%;
+    margin-top: 5%;
+}
+
+.artists-display{
+    height: 70%;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+}
+
+.artist-info-container{
+    height: 100%;
+    width: 16.6%;
+    margin-right: 10px;
+}
+
+.artist-image-container{
+    width: 100%;
+    height: 70%;
+}
+
+.artist-image-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+} 
+
+.artist-play-icon{
+    color: transparent;
+    position: relative;
+    left: 45%;
+    top: -70%;
+}
+
+.artist-name-hidden{
+    color: transparent;
+    position: relative;
+    top: -80%;
+    left: 20%;
+    font-family: cursive;
+}
+.artist-name{
+    color: white;
+    position: relative;
+    left: 25%;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist-image-container:hover .artist-play-icon{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.artist-image-container:hover{
+    background-image: url("images/background-image-1.jpeg");
+}
+
+.artist-image-container:hover .artist-name-hidden{
+    color: 	#0072B5;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.artist-info-container:hover .artist-name{
+    visibility: hidden;
+}
+
+/* stations */
+#stations{
+    position: relative;
+    left: 2%;
+    max-height: 200px;
+    padding: 10px;
+    padding-left: 0%;
+    top: 1.5rem;
+}
+
+.station-types{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 80%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #031a3d;;
+}
+
+.station-image-container{
+    height: 65%;
+    width: 12%;
+    margin: 10px;
+}
+
+.station-image-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.station-name{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    top: -80%;
+    font-size: 1.2rem;
+}
+
+.station-image-container:hover .station-name{
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.station-image-container:hover img{
+    border-radius: 0%;
+}
+
+/* music types */
+#music-types{
+    position: relative;
+    top: 4rem;
+    left: 2%;
+    max-height: 250px;
+    padding: 10px;
+    padding-left: 0%;
+    width: 70vw;
+}
+
+.music-display{
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.music-type-display{
+    height: 80%;
+    width: 32%;
+    transition: all .5s;
+}
+
+.music-type-display:hover{
+    transform: scale(1.2);
+}
+
+.type-1{
+    background-image: url("images/music-type-1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.type-2{
+    background-image: url("images/music-type-2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.type-3{
+    background-image: url("images/music-type-3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.music-type-name{
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 20%;
+    font-size: 2rem;
+    color: white;
+    background-position: center;
+}
+
+/* latest english */
+#latest-english{
+    position: relative;
+    left: 2%;
+    margin-top: 3%;
+    height: 320px;
+}
+
+.latest-english-heading{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: -0.2%;
+    font-size: 1.3rem;
+}
+
+.latest-english-display{
+    display: flex;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+
+.latest-english-content-container{
+    height: 100%;
+    width: 15%;
+}
+
+.latest-english-image{
+    height: 70%;
+    width: 100%;
+}
+
+.latest-english-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.latest-english-name{
+    color: white;
+    position: relative;
+    top: -2%;
+    font-weight: lighter;
+    color: gray;
+}
+
+.latest-english-date{
+    color: white;
+    position: relative;
+    top: -5%;
+    font-weight: lighter;
+    color: gray;
+}
+
+/* latest hindi */
+#latest-hindi{
+    position: relative;
+    left: 2%;
+    margin-top: 1%;
+    height: 350px;
+}
+
+.latest-hindi-heading{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: -0.2%;
+    font-size: 1.3rem;
+}
+
+.latest-hindi-display{
+    display: flex;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+
+.latest-hindi-content-container{
+    height: 100%;
+    width: 15%;
+}
+
+.latest-hindi-image{
+    height: 70%;
+    width: 100%;
+}
+
+.latest-hindi-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.latest-hindi-name{
+    color: white;
+    position: relative;
+    top: -2%;
+    font-weight: lighter;
+    color: gray;
+}
+
+.latest-hindi-date{
+    color: white;
+    position: relative;
+    top: -5%;
+    font-weight: lighter;
+    color: gray;
+}
+
+/* aside section */
+aside{
+    position: absolute;
+    display:inline-block;
+    width: 22vw;
+    left: 76%;
+    top: 15%;
+}
+/* Queue section enclosing dropdown box with playlist and favourite song option */
+/* Clicking here on playlist option will  take us to next playlist page*/
+.queue{
+    position: relative;
+}
+
+.queue p:first-child{
+    margin-top:-15px;
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    display:inline-block;
+
+}
+
+.queue p:nth-child(2)
+{position:absolute;
+    top:-55%;
+    left:70%;
+    color:rgb(34, 112, 112);
+    display:inline-block;
+    font-size:24px;
+}
+
+.queue>a{
+    position:absolute;
+    left:92%;
+    top:6px;
+    color:rgb(34, 112, 112);
+}
+
+.dropdown{
+    background-color:white;
+    position:absolute;
+    top:30px;
+    left:60%;
+    z-index:2;
+    visibility:hidden;
+}
+
+.dropdown li a{
+    color:black;
+    text-decoration:none;
+}
+
+.dropdown li{
+    margin-left:-30px;
+    padding-right:8px;
+}
+
+.dropdown hr{
+    margin-left: -40px;
+}
+
+#play:target{
+    visibility:visible;
+    position:fixed;
+    top:130px;
+    left:85%;
+}
+
+/* Playlist in aside section */
+.playlist{
+    display:grid;
+    height:500px;
+    grid-template-columns: 100%;
+    overflow:scroll;
+    grid-template-rows: repeat(10,65px);
+    grid-gap:1rem;
+    margin-left:5px;
+    position:relative;
+}
+
+/* Each song box in playlist section */
+.song1{
+    position:relative;
+}
+
+.song1 img{
+    height:65px;
+    width:22%;
+    margin-left:15px;
+}
+
+.song1 span{
+    color:grey;
+    position:relative;
+    top:-40%;
+    left:2px;
+}
+
+.song1 p span:first-child{
+    color:white;
+    position:absolute;
+    left:36%;
+    top: 20%;
+    font-size:17px;
+}
+
+.song1 p span:last-child{
+    color:grey;
+    position:absolute;
+    left:36%;
+    top:54%;
+    font-size:12px;
+}
+
+.song1 i{
+    color:grey;
+    position:absolute;
+    left:90%;
+    top:30%;
+}
+
+.song1:hover{
+    transform-style: preserve-3d;
+    transform:translate3d(7px,3px,10px);
+}
+
+/* Adding animation to heart icon in every songbox */
+@keyframes glowing-heart {0%{color:yellow;}50%{color:orangered;}100%{color:red;}}
+
+.song1:hover i{
+    animation-name: glowing-heart;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    animation-duration: 1s;
+}
+
+/* making playlist a little scroll able */
+.playlist::-webkit-scrollbar-thumb{
+    cursor: pointer;
+}
+
+.playlist::-webkit-scrollbar{
+    display:none;
+}
+
+/* Bottom fixed current playing songbox */
+.music{
+    height:70px;
+    position:fixed;
+    bottom:0px;
+    background-color:rgb(22, 22, 66);
+    width:100%;
+    left:0px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.music .photo {
+    position:relative;
+    width:25%;
+    height:100%;
+    margin-left: 80px;
+}
+
+.music .photo img{
+    height:100%;width:20%;
+}
+
+.music .photo p span:first-child{
+    color:white;
+    position:absolute;
+    left:25%;
+    top: 18%;
+    font-size:23px;
+}
+
+.music .photo p span:last-child{
+    color:grey;
+    position:absolute;
+    left:25%;
+    top:57%;
+    font-size:15px;
+    font-family: cursive;
+}
+
+.music .photo i{
+    color:grey;
+    font-size:20px;
+    margin:10px;
+    position:absolute;
+    top:7px;
+}
+
+.music .photo #first{
+    left:50%;
+}
+
+.music .photo #second{
+    left:58%;
+}
+
+/* part containing controls selection and slider */
+.gaana{
+    width:45%;
+    height:100%;
+    position:relative;
+}
+
+.btn{
+    position:relative;
+}
+
+.btn+span{
+    color:grey;
+    position:relative;
+    top:38px;
+    left:-8px;
+}
+
+.playing+span{
+    color:grey;
+    position:relative;
+    left:81%;
+    top:38px;
+}
+
+.btn i{
+    color:grey;
+    position:absolute;
+    top:14px;
+    font-size:15px;
+}
+
+#u{
+    left:25%;
+}
+
+#v{
+    left:35%;
+}
+
+#w{
+    left:41%;
+    color:white;
+    font-size:13px;
+    border:1px solid grey;
+    border-radius:50%;
+    padding:8px;
+    top:5px;
+}
+
+#w:hover{
+    cursor:pointer;
+}
+
+#x{
+    left:49%;
+}
+
+#y{
+    left:60%;
+}
+
+.playing{
+    background-color:white;
+    width:80%;
+    height:6px;
+    position:absolute;
+    top:45px;
+    left:32px;
+    border-radius:500px;
+}
+
+.playing .slider{
+    width:100%;
+    height:6px;
+    outline:none;
+    position:relative;
+    left:-4px;
+    top:-8px;
+}
+
+/* rightmost part containing volume control as well as display icons */
+.last {
+    width:100%;
+    height:100%;
+    position:relative;
+    left:100%;
+}
+.last i{
+    color:grey;
+    position:absolute;
+    top:15px;
+}
+#p{
+    left:10%;
+}
+#q{
+    left:15%;
+}
+#r{
+    left:20%;
+}
+#s{
+    left:100px;
+    top:-5px;
+}
+.volume{
+    background-color:grey;
+    width:12%;
+    height:6px;
+    position:absolute;
+    top:18px;
+    left:24%;
+    border-radius:50px;
+}
+.up{
+    background-color:green;
+    position:absolute;
+    top:0px;
+    width:60%;
+    height:6px;
+    border-radius:50px;
+}
+.up i{
+    margin-left:95%;
+    color:white;
+    position:relative;
+    top:-7px;
+    font-size:10px;
+}
+
+/* Making aside fixed while scrolling main section */
+main:hover+aside{
+    position:fixed;
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Ninjas Music Player</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/3219be7a00.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+         <!-- Navigation Bar It will have fixed position.Clicking on icon or site name in navbar will display a welcome box for user.Focusing on input box will remove all its background icons -->
+        <header id="navbar">
+
+            <nav class="header-navbar">
+
+                <div class="nav-image">
+                    <img src="images/player-icon.jpeg" alt="player-icon">
+                </div>
+    
+                <div class="nav-music-player-name">
+                    <div class="nav-name-ninja">
+                        <p>Ninja</p>
+                    </div>
+                    <div class="nav-name-studio">
+                        <p>Studio</p>
+                    </div>
+                </div>
+
+                <div class="favourites">
+                    <a href="#">Favourites</a>
+                </div>
+
+                <div class="nav-search-bar">
+                    <div class="nav-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <form>
+                        <input type="search" placeholder="Search">
+                    </form>
+                    <div class="nav-microphone-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+
+                <div class="nav-bell-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="nav-profile-image">
+                    <img src="images/profile-image.jpeg" alt="profile-image">
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <!-- The follwing section contains trending song and album photos displayed at top of the page. --->
+            <section id="album-carousel">
+                <div class="album-container">
+                    <div class="album-container-1">
+                        <img src="images/album-1.jpeg" alt="album-container-1">
+                    </div>
+                    
+                    <div class="album-container-2">
+                        <img src="images/album-2.jpeg" alt="album-container-2">
+                    </div>
+                    
+                    <div class="album-container-3">
+                        <img src="images/album-3.jpeg" alt="album-container-3">
+                    </div>
+                    
+                    <div class="album-container-4">
+                        <img src="images/album-4.jpeg" alt="album-container-4">
+                    </div>
+                    
+                    <div class="album-container-5">
+                        <img src="images/album-5.jpeg" alt="album-container-5">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The following div contains latest release section.Hovering on each box will leave a shadow behind with a slow movement -->
+            <section id="latest-release">
+                <h1 class="latest-release-heading">
+                    <span>Latest Release</span>
+                </h1>
+                
+                <div class="song-display">
+
+                    <div class="song-content">
+                        <div class="album-cover">
+                            <div class="album-image">
+                                <img src="images/latest-release-cover.jpeg" alt="latest-release-cover">
+                                <a href="#bottom-music-player"><i class="fa-solid fa-play album-play-icon"></i></a>
+                            </div>
+                            <p class="album-name">Onism</p>
+                            <p class="release-date">Aug 11,2017</p>
+                        </div>
+    
+                        <div class="album-drop-down">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Play</a>
+                                <a href="#"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Add To Favourites</a>
+                                <a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Get info</a>
+                            </div>
+                            <p class="album-song-duration">4:44</p>
+                        </div>
+                    </div>
+                
+
+                    <div class="song-content">
+                        <div class="album-cover">
+                            <div class="album-image">
+                                <img src="images/latest-release-cover.jpeg" alt="latest-release-cover">
+                                <a href="#bottom-music-player"><i class="fa-solid fa-play album-play-icon"></i></a>
+                            </div>
+                            <p class="album-name">Onism</p>
+                            <p class="release-date">Aug 11,2017</p>
+                        </div>
+    
+                        <div class="album-drop-down">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Play</a>
+                                <a href="#"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Add To Favourites</a>
+                                <a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Get info</a>
+                            </div>
+                            <p class="album-song-duration">4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="song-content">
+                        <div class="album-cover">
+                            <div class="album-image">
+                                <img src="images/latest-release-cover.jpeg" alt="latest-release-cover">
+                                <a href="#bottom-music-player"><i class="fa-solid fa-play album-play-icon"></i></a>
+                            </div>
+                            <p class="album-name">Onism</p>
+                            <p class="release-date">Aug 11,2017</p>
+                        </div>
+    
+                        <div class="album-drop-down">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Play</a>
+                                <a href="#"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Add To Favourites</a>
+                                <a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Get info</a>
+                            </div>
+                            <p class="album-song-duration">4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="song-content">
+                        <div class="album-cover">
+                            <div class="album-image">
+                                <img src="images/latest-release-cover.jpeg" alt="latest-release-cover">
+                                <a href="#bottom-music-player"><i class="fa-solid fa-play album-play-icon"></i></a>
+                            </div>
+                            <p class="album-name">Onism</p>
+                            <p class="release-date">Aug 11,2017</p>
+                        </div>
+    
+                        <div class="album-drop-down">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Play</a>
+                                <a href="#"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Add To Favourites</a>
+                                <a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Get info</a>
+                            </div>
+                            <p class="album-song-duration">4:44</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The following div contains images of popular artists with their names -->
+            <section id="popular-artists">
+                <h1 class="popular-artists-heading">
+                    <span>Popular Artists</span>
+                </h1>
+                
+                <div class="artists-display">
+                    <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-1.jpeg" alt="artist-1">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Anne Marrie</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Anne Marrie</span>
+                        </p>
+                    </div>
+
+                    <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-2.jpeg" alt="artist-2">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Adele Laurie</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Adele Laurie</span>
+                        </p>
+                    </div>
+
+                    <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-3.jpeg" alt="artist-3">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Justin Bieber</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Justin Bieber</span>
+                        </p>
+                    </div>
+
+                    <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-4.jpeg" alt="artist-4">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Taylor Swift</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Taylor Swift</span>
+                        </p>
+                    </div>
+
+                  <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-5.jpeg" alt="artist-5">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Charlie Puth</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Charlie Puth</span>
+                        </p>
+                    </div>
+
+                    <div class="artist-info-container">
+                        <div class="artist-image-container">
+                            <img src="images/artist-6.jpeg" alt="artist-6">
+                            <a href="page2.html"><i class="fa-solid fa-play artist-play-icon"></i></a>
+                            <p class="artist-name-hidden">Zayn Malik</p>
+                        </div>
+                        <p class="artist-name">
+                            <span>Zayn Malik</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The follwing div contains music station consisting of type of songs images like love rock etc. Over here clicking on music station imagw will take to next page i.e. playlists page -->
+            <section id="stations">
+                <div class="station-types">
+                    <div class="station-image-container">
+                        <img src="images/station.jpeg" alt="station" style="border-radius: 0%;">
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-1.jpeg" alt="station-1">
+                        <p class="station-name">Love</p>
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-2.jpeg" alt="station-2">
+                        <p class="station-name">Retro</p>
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-3.jpeg" alt="station-3">
+                        <p class="station-name">Chill</p>
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-4.jpeg" alt="station-4">
+                        <p class="station-name">Workout</p>
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-5.jpeg" alt="station-5">
+                        <p class="station-name">Rock</p>
+                    </div>
+
+                    <div class="station-image-container">
+                        <img src="images/station-6.jpeg" alt="station-6">
+                        <p class="station-name">Pop</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The following div contains latest english songs section consisting of their cover images which are little rounded off,song names and their release dates-->
+            <section id="music-types">
+                <div class="music-display">
+                    <div class="music-type-display type-1">
+                        <p class="music-type-name">Party</p>
+                    </div>
+                    
+                    <div class="music-type-display type-2">
+                        <p class="music-type-name">Electronic</p>
+                    </div>
+                    
+                    <div class="music-type-display type-3">
+                        <p class="music-type-name">Road Trip</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- The following div contains latest punjabi songs section consisting of their cover images which are little rounded off,song names and their release dates-->
+            <section id="latest-english">
+                <h1 class="latest-english-heading">
+                    <span>Latest English</span>
+                </h1>
+                
+                <div class="latest-english-display">
+                    
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-1.jpeg" alt="song-cover-1">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-2.jpeg" alt="song-cover-2">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+ 
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-3.jpeg" alt="song-cover-3">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-4.jpeg" alt="song-cover-4">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-5.jpeg" alt="song-cover-5">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-english-content-container">
+                        <div class="latest-english-image">
+                            <img src="images/song-cover-6.jpeg" alt="song-cover-6">
+                        </div>
+                        <p class="latest-english-name">Onism</p>
+                        <p class="latest-english-date">AUG 11, 2017</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="latest-hindi">
+                <h1 class="latest-hindi-heading">
+                    <span>Latest Hindi</span>
+                </h1>
+                
+                <div class="latest-hindi-display">
+                    
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-1.jpeg" alt="song-cover-1">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-2.jpeg" alt="song-cover-2">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+ 
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-3.jpeg" alt="song-cover-3">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-4.jpeg" alt="song-cover-4">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-5.jpeg" alt="song-cover-5">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+
+                    <div class="latest-hindi-content-container">
+                        <div class="latest-hindi-image">
+                            <img src="images/song-cover-6.jpeg" alt="song-cover-6">
+                        </div>
+                        <p class="latest-hindi-name">Onism</p>
+                        <p class="latest-hindi-date">AUG 11, 2017</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Aside section -->
+            <aside>
+                <!-- This div contains queue heading and queue with downward icon. Clicking on that icon will display a dropdown box.This box will contain an option named playlist clicking on which will take us to the next page i.e. playlists page. Second option is of Favourite songs clicking on which will take us to latest punjabi section. The last option is close which will help us to close the dropdown box.-->
+                <div class="queue">
+                    <p>Queue</p>
+                    <p>Queue</p>
+                    <a href="#play"><i class="fas fa-caret-down" ></i></a>
+                    <div id="play" class="dropdown">
+                        <ul type="none">
+                            <li><a href="page2.html" target="_blank">Playlists..🎵</a></li>
+                            <hr>
+                            <li><a href="#gaane">Favourite Songs..💖</a></li>
+                            <hr>
+                            <li><a href="#" style="color:red">Close..❌</a></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <!-- The following div will contain all the playlist songs. Hovering on each song will change cursor to hand pointer,provide a little motionary movement to it along with color changing animation on heart icon --> 
+                <div class="playlist">
+                    <div class="song1"><span>01</span><img src="images/Chan Vekhya.jpg"><p><span>Chan Vekhya</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>02</span><img src="images/Hello.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>03</span><img src="images/moonlight.jpg"><p><span>Moonlight</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>04</span><img src="images/teri.jpg"><p><span>Teri Ah</span><br><span>AP Dhillon</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>05</span><img src="images/parshawan.jpg"><p><span>Parshawan</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>06</span><img src="images/gutt.jpg"><p><span>Gutt</span><br><span>Arjan Dhillon</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>07</span><img src="images/vac.jpg"><p><span>Vacation</span><br><span>Nirvair Pannu</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>08</span><img src="images/bai.jpg"><p><span>Bai Bai</span><br><span>Jass Manak</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>09</span><img src="images/daru.jpg"><p><span>Daru Sasti</span><br><span>Arjan Dhillon</span></p><i class="far fa-heart"></i></div>
+                    <div class="song1"><span>10</span><img src="images/gun.jpg"><p><span>German Gun</span><br><span>Amrit Maan</span></p><i class="far fa-heart"></i></div>
+                </div>
+            </aside>
+        </main>
+        
+        <footer class="bottom-music-player">
+            <!-- The following div contains bottom music box. Its position is sticky.It is divided into three sections.First section contains song description along with image. Second part contains song controls along with the song slider.The last but not least part contains volume controls along with display icons -->
+            <div class="music">
+                <div class="photo"><img src="images/parshawan.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p>
+                    <i id="first" class="far fa-heart"></i><i id="second" class="fas fa-ban"></i>
+                </div>
+                
+                <div class="gaana">
+                    <div class="btn">
+                        <i id="u"class="fas fa-cut"></i>
+                        <i id="v"class="fas fa-backward"></i>
+                        <i id="w" class="fas fa-pause"></i>
+                        <i id="x" class="fas fa-forward"></i>
+                        <i id="y" class="fas fa-sync-alt"></i>
+                    </div>
+                    <span>3:39</span>
+                    <div class="playing">
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <span>4:44</span>
+                    <div class="last">
+                        <i id="p" class="fas fa-bars"></i>
+                        <i id="q" class="fas fa-desktop"></i>
+                        <i id="r" class="fas fa-volume-up"></i>                       
+                        <div class="volume">
+                            <div class="up"><i class="fas fa-circle"></i></div>
+                            <i id="s" class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
